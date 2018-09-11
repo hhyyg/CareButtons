@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimelineHeaderSectionView" customModule="CareButtons" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="BXK-uh-fp5" id="gOv-fP-h9i"/>
+                <outlet property="dateLabel" destination="ooC-Ui-Sla" id="XTn-V9-Q0u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXK-uh-fp5">
+                    <rect key="frame" x="-20" y="0.0" width="332.5" height="667"/>
+                    <color key="backgroundColor" name="info"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/12/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooC-Ui-Sla">
+                    <rect key="frame" x="16" y="323.5" width="92.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ooC-Ui-Sla" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="GS0-rJ-XZo"/>
+                <constraint firstItem="BXK-uh-fp5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="-20" id="O6y-pV-dd7"/>
+                <constraint firstAttribute="trailing" secondItem="BXK-uh-fp5" secondAttribute="trailing" multiplier="1.2" id="PIb-KB-uRf"/>
+                <constraint firstItem="ooC-Ui-Sla" firstAttribute="centerY" secondItem="BXK-uh-fp5" secondAttribute="centerY" id="WgZ-wW-mTv"/>
+                <constraint firstItem="BXK-uh-fp5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="j7P-QR-GdC"/>
+                <constraint firstAttribute="bottom" secondItem="BXK-uh-fp5" secondAttribute="bottom" id="td7-z6-OUV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-151" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="info">
+            <color red="1" green="0.72941176470588232" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

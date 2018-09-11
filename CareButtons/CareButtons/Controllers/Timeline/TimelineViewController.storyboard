@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RZe-Iw-0tf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timeline View Controller-->
+        <scene sceneID="lLf-Qm-ltE">
+            <objects>
+                <viewController id="RZe-Iw-0tf" customClass="TimelineViewController" customModule="CareButtons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="njb-MX-YyK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-Kq-Meu" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="491"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-7B-80o">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="491"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="RZe-Iw-0tf" id="a12-wm-iJs"/>
+                                            <outlet property="delegate" destination="RZe-Iw-0tf" id="9fP-YA-rDt"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EGc-7B-80o" secondAttribute="bottom" id="Ham-j4-EwN"/>
+                                    <constraint firstItem="EGc-7B-80o" firstAttribute="leading" secondItem="AhB-Kq-Meu" secondAttribute="leading" id="Xuv-tI-5Fd"/>
+                                    <constraint firstItem="EGc-7B-80o" firstAttribute="top" secondItem="AhB-Kq-Meu" secondAttribute="top" id="aSh-Vb-ceY"/>
+                                    <constraint firstAttribute="trailing" secondItem="EGc-7B-80o" secondAttribute="trailing" id="pMR-nI-hce"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szO-wn-AJc" userLabel="AdView">
+                                <rect key="frame" x="0.0" y="511" width="375" height="156"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.74117647060000003" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="kc2-kP-SdR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="krZ-Nh-a0s" firstAttribute="trailing" secondItem="szO-wn-AJc" secondAttribute="trailing" id="UTu-0m-Wjw"/>
+                            <constraint firstItem="AhB-Kq-Meu" firstAttribute="top" secondItem="krZ-Nh-a0s" secondAttribute="top" id="Vmu-VP-9Ak"/>
+                            <constraint firstItem="szO-wn-AJc" firstAttribute="bottom" secondItem="krZ-Nh-a0s" secondAttribute="bottom" id="WTl-nz-CWO"/>
+                            <constraint firstItem="szO-wn-AJc" firstAttribute="top" secondItem="AhB-Kq-Meu" secondAttribute="bottom" id="ejk-jt-Kjb"/>
+                            <constraint firstItem="szO-wn-AJc" firstAttribute="leading" secondItem="krZ-Nh-a0s" secondAttribute="leading" id="nDS-J6-8dE"/>
+                            <constraint firstItem="krZ-Nh-a0s" firstAttribute="trailing" secondItem="AhB-Kq-Meu" secondAttribute="trailing" id="nVy-Gm-uY2"/>
+                            <constraint firstItem="AhB-Kq-Meu" firstAttribute="leading" secondItem="krZ-Nh-a0s" secondAttribute="leading" id="nhL-Jg-2Vw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="krZ-Nh-a0s"/>
+                    </view>
+                    <connections>
+                        <outlet property="timelineTableView" destination="EGc-7B-80o" id="0Gc-QM-Arv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjN-aS-bsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+</document>

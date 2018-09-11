@@ -1,0 +1,1471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1B5945B97F090A72103CA9 /* Pods_CareButtonToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B426A3ECD7C0DF78D69CB0E7 /* Pods_CareButtonToday.framework */; };
+		45E6C95E089415F345EE222F /* Pods_CareButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D50B3BCCF4E36C6F9115617 /* Pods_CareButtons.framework */; };
+		6E20D3241A22C200F1D47B80 /* Pods_CareButtonsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A207700A42012B342BD93 /* Pods_CareButtonsTests.framework */; };
+		EB0662ED204A63FF00DBD960 /* SlackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662EC204A63FF00DBD960 /* SlackAction.swift */; };
+		EB0662EF204B97B000DBD960 /* CareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662EE204B97B000DBD960 /* CareButton.swift */; };
+		EB0662F1204B97F300DBD960 /* CareButtonPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F0204B97F300DBD960 /* CareButtonPanel.swift */; };
+		EB0662F3204B997400DBD960 /* CareButtonEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F2204B997400DBD960 /* CareButtonEventLog.swift */; };
+		EB0662F5204BA54700DBD960 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F4204BA54700DBD960 /* UserDefaultsService.swift */; };
+		EB0662FC204BC2D800DBD960 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0662FB204BC2D800DBD960 /* NotificationCenter.framework */; };
+		EB0662FF204BC2D800DBD960 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662FE204BC2D800DBD960 /* TodayViewController.swift */; };
+		EB066302204BC2D800DBD960 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB066300204BC2D800DBD960 /* MainInterface.storyboard */; };
+		EB066306204BC2D800DBD960 /* CareButtonToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB0662FA204BC2D800DBD960 /* CareButtonToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB06630B204BCE3200DBD960 /* CareButtonEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F2204B997400DBD960 /* CareButtonEventLog.swift */; };
+		EB06630C204BCE3200DBD960 /* CareButtonEventLogDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1EE1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift */; };
+		EB06630D204BCE3200DBD960 /* CareButtonEventLogParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEEF0902022BBCF00EB48FE /* CareButtonEventLogParser.swift */; };
+		EB06630E204BCE3200DBD960 /* SlackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662EC204A63FF00DBD960 /* SlackAction.swift */; };
+		EB06630F204BCE3200DBD960 /* CareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662EE204B97B000DBD960 /* CareButton.swift */; };
+		EB066310204BCE3200DBD960 /* CareButtonPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F0204B97F300DBD960 /* CareButtonPanel.swift */; };
+		EB066311204BCE3200DBD960 /* CareButtonDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D71FF36DC000ACCD0F /* CareButtonDummyData.swift */; };
+		EB066312204BCE3200DBD960 /* UIColor+CareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D91FF371F500ACCD0F /* UIColor+CareButton.swift */; };
+		EB066313204BCE3200DBD960 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1C61FF33D2E00ACCD0F /* Log.swift */; };
+		EB066314204BCE3200DBD960 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEEF08C20218AA600EB48FE /* KeychainService.swift */; };
+		EB066315204BCE3200DBD960 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0662F4204BA54700DBD960 /* UserDefaultsService.swift */; };
+		EB066319204D00B100DBD960 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB066317204D009900DBD960 /* KeychainAccess.framework */; };
+		EB06631A204D017900DBD960 /* CareButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D11FF3581600ACCD0F /* CareButtonCollectionViewCell.swift */; };
+		EB06631B204D017900DBD960 /* CareButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1D21FF3581600ACCD0F /* CareButtonCollectionViewCell.xib */; };
+		EB06631C204D017900DBD960 /* CareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66BAD41FF8ADC700E4EB4A /* CareButtonView.swift */; };
+		EB06631D204D017900DBD960 /* CareButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB66BAD21FF8AD2E00E4EB4A /* CareButtonView.xib */; };
+		EB06631E204D017900DBD960 /* CareButtonViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66BAD61FF8B18000E4EB4A /* CareButtonViewHelper.swift */; };
+		EB06631F204D01BF00DBD960 /* NativePopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BA1E41FF4C87000ACCD0F /* NativePopup.framework */; };
+		EB066321204D218800DBD960 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB066320204D218800DBD960 /* FirebaseStorage.swift */; };
+		EB066322204D21AA00DBD960 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB066320204D218800DBD960 /* FirebaseStorage.swift */; };
+		EB066327204D2F0F00DBD960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1931FF3349400ACCD0F /* Assets.xcassets */; };
+		EB3BA18D1FF3349400ACCD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA18C1FF3349400ACCD0F /* AppDelegate.swift */; };
+		EB3BA1941FF3349400ACCD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1931FF3349400ACCD0F /* Assets.xcassets */; };
+		EB3BA1971FF3349400ACCD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1951FF3349400ACCD0F /* LaunchScreen.storyboard */; };
+		EB3BA1A21FF3349400ACCD0F /* CareButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1A11FF3349400ACCD0F /* CareButtonsTests.swift */; };
+		EB3BA1AD1FF3349400ACCD0F /* CareButtonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1AC1FF3349400ACCD0F /* CareButtonsUITests.swift */; };
+		EB3BA1BD1FF336EB00ACCD0F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1BC1FF336EB00ACCD0F /* RootViewController.swift */; };
+		EB3BA1BF1FF3371700ACCD0F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1BE1FF3371700ACCD0F /* SplashViewController.swift */; };
+		EB3BA1C11FF3376000ACCD0F /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1C01FF3376000ACCD0F /* MainController.swift */; };
+		EB3BA1C41FF3383600ACCD0F /* MainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1C31FF3383600ACCD0F /* MainController.storyboard */; };
+		EB3BA1C71FF33D2E00ACCD0F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1C61FF33D2E00ACCD0F /* Log.swift */; };
+		EB3BA1C91FF3437200ACCD0F /* CareButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1C81FF3437200ACCD0F /* CareButtonsViewController.swift */; };
+		EB3BA1CB1FF3438600ACCD0F /* CareButtonsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1CA1FF3438600ACCD0F /* CareButtonsViewController.storyboard */; };
+		EB3BA1D31FF3581600ACCD0F /* CareButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D11FF3581600ACCD0F /* CareButtonCollectionViewCell.swift */; };
+		EB3BA1D41FF3581600ACCD0F /* CareButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1D21FF3581600ACCD0F /* CareButtonCollectionViewCell.xib */; };
+		EB3BA1D81FF36DC000ACCD0F /* CareButtonDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D71FF36DC000ACCD0F /* CareButtonDummyData.swift */; };
+		EB3BA1DA1FF371F500ACCD0F /* UIColor+CareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1D91FF371F500ACCD0F /* UIColor+CareButton.swift */; };
+		EB3BA1E11FF4C85200ACCD0F /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1DF1FF4C85100ACCD0F /* Cartfile */; };
+		EB3BA1E21FF4C85200ACCD0F /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1E01FF4C85100ACCD0F /* Cartfile.resolved */; };
+		EB3BA1E51FF4C87000ACCD0F /* NativePopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BA1E41FF4C87000ACCD0F /* NativePopup.framework */; };
+		EB3BA1E81FF5F87E00ACCD0F /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1E71FF5F87E00ACCD0F /* TimelineViewController.storyboard */; };
+		EB3BA1EA1FF5F89100ACCD0F /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1E91FF5F89100ACCD0F /* TimelineViewController.swift */; };
+		EB3BA1EF1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1EE1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift */; };
+		EB3BA1F21FF5FFB700ACCD0F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1F01FF5FFB700ACCD0F /* TimelineTableViewCell.swift */; };
+		EB3BA1F31FF5FFB700ACCD0F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3BA1F11FF5FFB700ACCD0F /* TimelineTableViewCell.xib */; };
+		EB3BA1F51FF6059900ACCD0F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BA1F41FF6059900ACCD0F /* CircleView.swift */; };
+		EB66BAD11FF8ABDB00E4EB4A /* CareButtonActionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB66BAD01FF8ABDB00E4EB4A /* CareButtonActionViewController.storyboard */; };
+		EB66BAD31FF8AD2E00E4EB4A /* CareButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB66BAD21FF8AD2E00E4EB4A /* CareButtonView.xib */; };
+		EB66BAD51FF8ADC700E4EB4A /* CareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66BAD41FF8ADC700E4EB4A /* CareButtonView.swift */; };
+		EB66BAD71FF8B18000E4EB4A /* CareButtonViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66BAD61FF8B18000E4EB4A /* CareButtonViewHelper.swift */; };
+		EB66BAD91FF8B31300E4EB4A /* CareButtonActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66BAD81FF8B31300E4EB4A /* CareButtonActionViewController.swift */; };
+		EB69B08D1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69B08B1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.swift */; };
+		EB69B08E1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB69B08C1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.xib */; };
+		EB69B0911FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69B08F1FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.swift */; };
+		EB69B0921FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB69B0901FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.xib */; };
+		EB69B0951FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69B0931FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.swift */; };
+		EB69B0961FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB69B0941FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.xib */; };
+		EB69B0981FFB3853004ABEFA /* OrgTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69B0971FFB3853004ABEFA /* OrgTransition.swift */; };
+		EB69B09D1FFB3C4D004ABEFA /* TimelineHeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB69B09C1FFB3C4D004ABEFA /* TimelineHeaderSectionView.xib */; };
+		EB69B09F1FFB3C77004ABEFA /* TimelineHeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69B09E1FFB3C77004ABEFA /* TimelineHeaderSectionView.swift */; };
+		EB743AF620524D2B009830FA /* ApplicationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB743AF520524D2B009830FA /* ApplicationBuilder.swift */; };
+		EB743AF720524D2B009830FA /* ApplicationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB743AF520524D2B009830FA /* ApplicationBuilder.swift */; };
+		EB743B0C205BB42C009830FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB743B0B205BB42C009830FA /* GoogleService-Info.plist */; };
+		EB743B13206DF005009830FA /* SettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB743B12206DF005009830FA /* SettingsTableViewController.storyboard */; };
+		EB743B15206DF01A009830FA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB743B14206DF01A009830FA /* SettingsTableViewController.swift */; };
+		EB802D971FFC930000D39396 /* CareButtonActionNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB802D951FFC930000D39396 /* CareButtonActionNoteTableViewCell.swift */; };
+		EB802D981FFC930000D39396 /* CareButtonActionNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB802D961FFC930000D39396 /* CareButtonActionNoteTableViewCell.xib */; };
+		EBA29B2D206E0445009C5080 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2A206E0444009C5080 /* TwitterShareExtensionUI.framework */; };
+		EBA29B2E206E0445009C5080 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2B206E0444009C5080 /* TwitterCore.framework */; };
+		EBA29B2F206E0445009C5080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2C206E0444009C5080 /* TwitterKit.framework */; };
+		EBA29B31206E1B17009C5080 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B30206E1B16009C5080 /* SafariServices.framework */; };
+		EBA29B32206E1BE5009C5080 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2B206E0444009C5080 /* TwitterCore.framework */; };
+		EBA29B33206E1BE5009C5080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2C206E0444009C5080 /* TwitterKit.framework */; };
+		EBA29B34206E1BE5009C5080 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B2A206E0444009C5080 /* TwitterShareExtensionUI.framework */; };
+		EBA29B362071CEEC009C5080 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B352071CEEC009C5080 /* UserService.swift */; };
+		EBA29B382071CF00009C5080 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B352071CEEC009C5080 /* UserService.swift */; };
+		EBA29B412071E94D009C5080 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B392071E907009C5080 /* RxBlocking.framework */; };
+		EBA29B422071E94D009C5080 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B3B2071E908009C5080 /* RxCocoa.framework */; };
+		EBA29B432071E94D009C5080 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA29B3A2071E908009C5080 /* RxSwift.framework */; };
+		EBA29B462072088D009C5080 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B452072088D009C5080 /* AuthenticationService.swift */; };
+		EBA29B4720720981009C5080 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B452072088D009C5080 /* AuthenticationService.swift */; };
+		EBA29B4920733977009C5080 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B4820733977009C5080 /* Error.swift */; };
+		EBA29B4A20733977009C5080 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B4820733977009C5080 /* Error.swift */; };
+		EBA29B4C20749E31009C5080 /* ProjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B4B20749E31009C5080 /* ProjectService.swift */; };
+		EBA29B4F2074A04D009C5080 /* ProjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B4B20749E31009C5080 /* ProjectService.swift */; };
+		EBA29B512074A060009C5080 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B502074A060009C5080 /* Project.swift */; };
+		EBA29B522074A182009C5080 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA29B502074A060009C5080 /* Project.swift */; };
+		EBB1283E207735E400ABF323 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1283D207735E400ABF323 /* ControllerFactory.swift */; };
+		EBB12841207B0A4000ABF323 /* DBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12840207B0A4000ABF323 /* DBTree.swift */; };
+		EBB12842207B0C4700ABF323 /* DBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12840207B0A4000ABF323 /* DBTree.swift */; };
+		EBB12848207B1E3000ABF323 /* InviteTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB12847207B1E3000ABF323 /* InviteTableViewController.storyboard */; };
+		EBB1284A207B1E4A00ABF323 /* InviteTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12849207B1E4A00ABF323 /* InviteTableTableViewController.swift */; };
+		EBB1284E207B377D00ABF323 /* SharedUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1284C207B377D00ABF323 /* SharedUserTableViewCell.swift */; };
+		EBB1284F207B377D00ABF323 /* SharedUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB1284D207B377D00ABF323 /* SharedUserTableViewCell.xib */; };
+		EBB12852207B379900ABF323 /* InviteCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12850207B379900ABF323 /* InviteCodeTableViewCell.swift */; };
+		EBB12853207B379900ABF323 /* InviteCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB12851207B379900ABF323 /* InviteCodeTableViewCell.xib */; };
+		EBB12855207B3C1300ABF323 /* SharedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12854207B3C1300ABF323 /* SharedUser.swift */; };
+		EBB12858207B3E9100ABF323 /* NoExistSharedUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12856207B3E9100ABF323 /* NoExistSharedUserTableViewCell.swift */; };
+		EBB12859207B3E9100ABF323 /* NoExistSharedUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB12857207B3E9100ABF323 /* NoExistSharedUserTableViewCell.xib */; };
+		EBB1285A207C895500ABF323 /* SharedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12854207B3C1300ABF323 /* SharedUser.swift */; };
+		EBB1285C207CA39300ABF323 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1285B207CA39300ABF323 /* Invitation.swift */; };
+		EBB1285D207CA39300ABF323 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1285B207CA39300ABF323 /* Invitation.swift */; };
+		EBB1285F207CAA4900ABF323 /* ProjectInvitationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1285E207CAA4900ABF323 /* ProjectInvitationService.swift */; };
+		EBB12860207CAA4900ABF323 /* ProjectInvitationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1285E207CAA4900ABF323 /* ProjectInvitationService.swift */; };
+		EBB12862207DC63000ABF323 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12861207DC63000ABF323 /* EnumCollection.swift */; };
+		EBB12863207DC63000ABF323 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB12861207DC63000ABF323 /* EnumCollection.swift */; };
+		EBCB86CE208463FF00E04A4E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCB86CD208463FF00E04A4E /* CoreImage.framework */; };
+		EBCB86D020847A3400E04A4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB86CF20847A3400E04A4E /* LoginViewController.swift */; };
+		EBCB86D220847A4B00E04A4E /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB86D120847A4B00E04A4E /* LoginViewController.storyboard */; };
+		EBEEF087202185AC00EB48FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBEEF086202185AB00EB48FE /* GoogleService-Info.plist */; };
+		EBEEF08A2021862D00EB48FE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBEEF0882021862C00EB48FE /* Podfile */; };
+		EBEEF08D20218AA600EB48FE /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEEF08C20218AA600EB48FE /* KeychainService.swift */; };
+		EBEEF08F2021933500EB48FE /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = EBEEF08E2021933500EB48FE /* Podfile.lock */; };
+		EBEEF0912022BBCF00EB48FE /* CareButtonEventLogParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEEF0902022BBCF00EB48FE /* CareButtonEventLogParser.swift */; };
+		F0B442B2EFD1F2078DB8BF28 /* Pods_CareButtonsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F04EFE1327FF69DDF268391 /* Pods_CareButtonsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB066304204BC2D800DBD960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3BA1811FF3349400ACCD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB0662F9204BC2D800DBD960;
+			remoteInfo = CareButtonToday;
+		};
+		EB3BA19E1FF3349400ACCD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3BA1811FF3349400ACCD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3BA1881FF3349400ACCD0F;
+			remoteInfo = CareButtons;
+		};
+		EB3BA1A91FF3349400ACCD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3BA1811FF3349400ACCD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3BA1881FF3349400ACCD0F;
+			remoteInfo = CareButtons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB06630A204BC2D800DBD960 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB066306204BC2D800DBD960 /* CareButtonToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04312AAE3AFDACA2EFBE12F8 /* Pods-CareButtonToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonToday/Pods-CareButtonToday.release.xcconfig"; sourceTree = "<group>"; };
+		28546F5761FAF7BD23954C10 /* Pods-CareButtons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtons/Pods-CareButtons.debug.xcconfig"; sourceTree = "<group>"; };
+		41A65202E9BA9EBF268C9B05 /* Pods-CareButtonsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonsTests/Pods-CareButtonsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D50B3BCCF4E36C6F9115617 /* Pods_CareButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F04EFE1327FF69DDF268391 /* Pods_CareButtonsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareButtonsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9603859814D80CFCF89660 /* Pods-CareButtonsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonsUITests/Pods-CareButtonsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DC69654B25EE7B006580526 /* Pods-CareButtonToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonToday/Pods-CareButtonToday.debug.xcconfig"; sourceTree = "<group>"; };
+		A2ED939F2CBA4224769EAE86 /* Pods-CareButtonsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonsTests/Pods-CareButtonsTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABF06E83B3FC5883D157DEC7 /* Pods-CareButtonsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtonsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtonsUITests/Pods-CareButtonsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B426A3ECD7C0DF78D69CB0E7 /* Pods_CareButtonToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareButtonToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF15E6F863612C1A59FC5957 /* Pods-CareButtons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareButtons.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareButtons/Pods-CareButtons.release.xcconfig"; sourceTree = "<group>"; };
+		D86A207700A42012B342BD93 /* Pods_CareButtonsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareButtonsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0662EC204A63FF00DBD960 /* SlackAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackAction.swift; sourceTree = "<group>"; };
+		EB0662EE204B97B000DBD960 /* CareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButton.swift; sourceTree = "<group>"; };
+		EB0662F0204B97F300DBD960 /* CareButtonPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonPanel.swift; sourceTree = "<group>"; };
+		EB0662F2204B997400DBD960 /* CareButtonEventLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonEventLog.swift; sourceTree = "<group>"; };
+		EB0662F4204BA54700DBD960 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		EB0662FA204BC2D800DBD960 /* CareButtonToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CareButtonToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0662FB204BC2D800DBD960 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		EB0662FE204BC2D800DBD960 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		EB066301204BC2D800DBD960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EB066303204BC2D800DBD960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB066317204D009900DBD960 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		EB066320204D218800DBD960 /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
+		EB066325204D25F300DBD960 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework; sourceTree = "<group>"; };
+		EB3BA1891FF3349400ACCD0F /* CareButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BA18C1FF3349400ACCD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3BA1931FF3349400ACCD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3BA1961FF3349400ACCD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB3BA1981FF3349400ACCD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3BA19D1FF3349400ACCD0F /* CareButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BA1A11FF3349400ACCD0F /* CareButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonsTests.swift; sourceTree = "<group>"; };
+		EB3BA1A31FF3349400ACCD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3BA1A81FF3349400ACCD0F /* CareButtonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareButtonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BA1AC1FF3349400ACCD0F /* CareButtonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonsUITests.swift; sourceTree = "<group>"; };
+		EB3BA1AE1FF3349400ACCD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3BA1BC1FF336EB00ACCD0F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		EB3BA1BE1FF3371700ACCD0F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		EB3BA1C01FF3376000ACCD0F /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		EB3BA1C31FF3383600ACCD0F /* MainController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainController.storyboard; sourceTree = "<group>"; };
+		EB3BA1C61FF33D2E00ACCD0F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		EB3BA1C81FF3437200ACCD0F /* CareButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonsViewController.swift; sourceTree = "<group>"; };
+		EB3BA1CA1FF3438600ACCD0F /* CareButtonsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CareButtonsViewController.storyboard; sourceTree = "<group>"; };
+		EB3BA1D11FF3581600ACCD0F /* CareButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB3BA1D21FF3581600ACCD0F /* CareButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB3BA1D71FF36DC000ACCD0F /* CareButtonDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonDummyData.swift; sourceTree = "<group>"; };
+		EB3BA1D91FF371F500ACCD0F /* UIColor+CareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CareButton.swift"; sourceTree = "<group>"; };
+		EB3BA1DF1FF4C85100ACCD0F /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		EB3BA1E01FF4C85100ACCD0F /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		EB3BA1E41FF4C87000ACCD0F /* NativePopup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativePopup.framework; path = Carthage/Build/iOS/NativePopup.framework; sourceTree = "<group>"; };
+		EB3BA1E71FF5F87E00ACCD0F /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
+		EB3BA1E91FF5F89100ACCD0F /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		EB3BA1EE1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonEventLogDummyData.swift; sourceTree = "<group>"; };
+		EB3BA1F01FF5FFB700ACCD0F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		EB3BA1F11FF5FFB700ACCD0F /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		EB3BA1F41FF6059900ACCD0F /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		EB66BAD01FF8ABDB00E4EB4A /* CareButtonActionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CareButtonActionViewController.storyboard; sourceTree = "<group>"; };
+		EB66BAD21FF8AD2E00E4EB4A /* CareButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonView.xib; sourceTree = "<group>"; };
+		EB66BAD41FF8ADC700E4EB4A /* CareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonView.swift; sourceTree = "<group>"; };
+		EB66BAD61FF8B18000E4EB4A /* CareButtonViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonViewHelper.swift; sourceTree = "<group>"; };
+		EB66BAD81FF8B31300E4EB4A /* CareButtonActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonActionViewController.swift; sourceTree = "<group>"; };
+		EB69B08B1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonActionTimeTableViewCell.swift; sourceTree = "<group>"; };
+		EB69B08C1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonActionTimeTableViewCell.xib; sourceTree = "<group>"; };
+		EB69B08F1FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonActionQuantityTableViewCell.swift; sourceTree = "<group>"; };
+		EB69B0901FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonActionQuantityTableViewCell.xib; sourceTree = "<group>"; };
+		EB69B0931FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonActionSelectTimeTableViewCell.swift; sourceTree = "<group>"; };
+		EB69B0941FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonActionSelectTimeTableViewCell.xib; sourceTree = "<group>"; };
+		EB69B0971FFB3853004ABEFA /* OrgTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgTransition.swift; sourceTree = "<group>"; };
+		EB69B09C1FFB3C4D004ABEFA /* TimelineHeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineHeaderSectionView.xib; sourceTree = "<group>"; };
+		EB69B09E1FFB3C77004ABEFA /* TimelineHeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineHeaderSectionView.swift; sourceTree = "<group>"; };
+		EB743AF520524D2B009830FA /* ApplicationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBuilder.swift; sourceTree = "<group>"; };
+		EB743AFB20524F77009830FA /* CareButtons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareButtons.entitlements; sourceTree = "<group>"; };
+		EB743B05205A31CF009830FA /* CareButtonToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareButtonToday.entitlements; sourceTree = "<group>"; };
+		EB743B0B205BB42C009830FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB743B12206DF005009830FA /* SettingsTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsTableViewController.storyboard; sourceTree = "<group>"; };
+		EB743B14206DF01A009830FA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		EB802D951FFC930000D39396 /* CareButtonActionNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonActionNoteTableViewCell.swift; sourceTree = "<group>"; };
+		EB802D961FFC930000D39396 /* CareButtonActionNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareButtonActionNoteTableViewCell.xib; sourceTree = "<group>"; };
+		EBA29B2A206E0444009C5080 /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
+		EBA29B2B206E0444009C5080 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		EBA29B2C206E0444009C5080 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = Carthage/Build/iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		EBA29B30206E1B16009C5080 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		EBA29B352071CEEC009C5080 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EBA29B392071E907009C5080 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		EBA29B3A2071E908009C5080 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		EBA29B3B2071E908009C5080 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		EBA29B3C2071E908009C5080 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		EBA29B452072088D009C5080 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		EBA29B4820733977009C5080 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		EBA29B4B20749E31009C5080 /* ProjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectService.swift; sourceTree = "<group>"; };
+		EBA29B502074A060009C5080 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		EBB1283D207735E400ABF323 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		EBB12840207B0A4000ABF323 /* DBTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTree.swift; sourceTree = "<group>"; };
+		EBB12847207B1E3000ABF323 /* InviteTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InviteTableViewController.storyboard; sourceTree = "<group>"; };
+		EBB12849207B1E4A00ABF323 /* InviteTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteTableTableViewController.swift; sourceTree = "<group>"; };
+		EBB1284C207B377D00ABF323 /* SharedUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserTableViewCell.swift; sourceTree = "<group>"; };
+		EBB1284D207B377D00ABF323 /* SharedUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedUserTableViewCell.xib; sourceTree = "<group>"; };
+		EBB12850207B379900ABF323 /* InviteCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCodeTableViewCell.swift; sourceTree = "<group>"; };
+		EBB12851207B379900ABF323 /* InviteCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteCodeTableViewCell.xib; sourceTree = "<group>"; };
+		EBB12854207B3C1300ABF323 /* SharedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUser.swift; sourceTree = "<group>"; };
+		EBB12856207B3E9100ABF323 /* NoExistSharedUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoExistSharedUserTableViewCell.swift; sourceTree = "<group>"; };
+		EBB12857207B3E9100ABF323 /* NoExistSharedUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoExistSharedUserTableViewCell.xib; sourceTree = "<group>"; };
+		EBB1285B207CA39300ABF323 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		EBB1285E207CAA4900ABF323 /* ProjectInvitationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInvitationService.swift; sourceTree = "<group>"; };
+		EBB12861207DC63000ABF323 /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
+		EBCB86CD208463FF00E04A4E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		EBCB86CF20847A3400E04A4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBCB86D120847A4B00E04A4E /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		EBEEF086202185AB00EB48FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBEEF0882021862C00EB48FE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EBEEF08C20218AA600EB48FE /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		EBEEF08E2021933500EB48FE /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		EBEEF0902022BBCF00EB48FE /* CareButtonEventLogParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareButtonEventLogParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0662F7204BC2D800DBD960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA29B32206E1BE5009C5080 /* TwitterCore.framework in Frameworks */,
+				EBA29B33206E1BE5009C5080 /* TwitterKit.framework in Frameworks */,
+				EBA29B34206E1BE5009C5080 /* TwitterShareExtensionUI.framework in Frameworks */,
+				EB06631F204D01BF00DBD960 /* NativePopup.framework in Frameworks */,
+				EB066319204D00B100DBD960 /* KeychainAccess.framework in Frameworks */,
+				EB0662FC204BC2D800DBD960 /* NotificationCenter.framework in Frameworks */,
+				2B1B5945B97F090A72103CA9 /* Pods_CareButtonToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1861FF3349400ACCD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCB86CE208463FF00E04A4E /* CoreImage.framework in Frameworks */,
+				EBA29B412071E94D009C5080 /* RxBlocking.framework in Frameworks */,
+				EBA29B422071E94D009C5080 /* RxCocoa.framework in Frameworks */,
+				EBA29B432071E94D009C5080 /* RxSwift.framework in Frameworks */,
+				EBA29B31206E1B17009C5080 /* SafariServices.framework in Frameworks */,
+				EBA29B2D206E0445009C5080 /* TwitterShareExtensionUI.framework in Frameworks */,
+				EBA29B2E206E0445009C5080 /* TwitterCore.framework in Frameworks */,
+				EBA29B2F206E0445009C5080 /* TwitterKit.framework in Frameworks */,
+				EB3BA1E51FF4C87000ACCD0F /* NativePopup.framework in Frameworks */,
+				45E6C95E089415F345EE222F /* Pods_CareButtons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA19A1FF3349400ACCD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E20D3241A22C200F1D47B80 /* Pods_CareButtonsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1A51FF3349400ACCD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B442B2EFD1F2078DB8BF28 /* Pods_CareButtonsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29DA2AADCEEABE2595C92EAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28546F5761FAF7BD23954C10 /* Pods-CareButtons.debug.xcconfig */,
+				CF15E6F863612C1A59FC5957 /* Pods-CareButtons.release.xcconfig */,
+				41A65202E9BA9EBF268C9B05 /* Pods-CareButtonsTests.debug.xcconfig */,
+				A2ED939F2CBA4224769EAE86 /* Pods-CareButtonsTests.release.xcconfig */,
+				8B9603859814D80CFCF89660 /* Pods-CareButtonsUITests.debug.xcconfig */,
+				ABF06E83B3FC5883D157DEC7 /* Pods-CareButtonsUITests.release.xcconfig */,
+				8DC69654B25EE7B006580526 /* Pods-CareButtonToday.debug.xcconfig */,
+				04312AAE3AFDACA2EFBE12F8 /* Pods-CareButtonToday.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB0662FD204BC2D800DBD960 /* CareButtonToday */ = {
+			isa = PBXGroup;
+			children = (
+				EB743B0B205BB42C009830FA /* GoogleService-Info.plist */,
+				EB743B05205A31CF009830FA /* CareButtonToday.entitlements */,
+				EB0662FE204BC2D800DBD960 /* TodayViewController.swift */,
+				EB066300204BC2D800DBD960 /* MainInterface.storyboard */,
+				EB066303204BC2D800DBD960 /* Info.plist */,
+			);
+			path = CareButtonToday;
+			sourceTree = "<group>";
+		};
+		EB3BA1801FF3349400ACCD0F = {
+			isa = PBXGroup;
+			children = (
+				EBEEF08E2021933500EB48FE /* Podfile.lock */,
+				EBEEF0882021862C00EB48FE /* Podfile */,
+				EB3BA1DF1FF4C85100ACCD0F /* Cartfile */,
+				EB3BA1E01FF4C85100ACCD0F /* Cartfile.resolved */,
+				EB3BA18B1FF3349400ACCD0F /* CareButtons */,
+				EB3BA1A01FF3349400ACCD0F /* CareButtonsTests */,
+				EB3BA1AB1FF3349400ACCD0F /* CareButtonsUITests */,
+				EB0662FD204BC2D800DBD960 /* CareButtonToday */,
+				EB3BA18A1FF3349400ACCD0F /* Products */,
+				EB3BA1E31FF4C86F00ACCD0F /* Frameworks */,
+				29DA2AADCEEABE2595C92EAB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3BA18A1FF3349400ACCD0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1891FF3349400ACCD0F /* CareButtons.app */,
+				EB3BA19D1FF3349400ACCD0F /* CareButtonsTests.xctest */,
+				EB3BA1A81FF3349400ACCD0F /* CareButtonsUITests.xctest */,
+				EB0662FA204BC2D800DBD960 /* CareButtonToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3BA18B1FF3349400ACCD0F /* CareButtons */ = {
+			isa = PBXGroup;
+			children = (
+				EB743AFB20524F77009830FA /* CareButtons.entitlements */,
+				EBEEF086202185AB00EB48FE /* GoogleService-Info.plist */,
+				EB69B09B1FFB3C02004ABEFA /* View */,
+				EB3BA1C51FF33D1800ACCD0F /* Core */,
+				EB3BA1D51FF36D9800ACCD0F /* Application */,
+				EB3BA1BB1FF336C300ACCD0F /* Controllers */,
+				EB3BA18C1FF3349400ACCD0F /* AppDelegate.swift */,
+				EB3BA1931FF3349400ACCD0F /* Assets.xcassets */,
+				EB3BA1951FF3349400ACCD0F /* LaunchScreen.storyboard */,
+				EB3BA1981FF3349400ACCD0F /* Info.plist */,
+			);
+			path = CareButtons;
+			sourceTree = "<group>";
+		};
+		EB3BA1A01FF3349400ACCD0F /* CareButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1A11FF3349400ACCD0F /* CareButtonsTests.swift */,
+				EB3BA1A31FF3349400ACCD0F /* Info.plist */,
+			);
+			path = CareButtonsTests;
+			sourceTree = "<group>";
+		};
+		EB3BA1AB1FF3349400ACCD0F /* CareButtonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1AC1FF3349400ACCD0F /* CareButtonsUITests.swift */,
+				EB3BA1AE1FF3349400ACCD0F /* Info.plist */,
+			);
+			path = CareButtonsUITests;
+			sourceTree = "<group>";
+		};
+		EB3BA1BB1FF336C300ACCD0F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1283D207735E400ABF323 /* ControllerFactory.swift */,
+				EB743B11206DEFBC009830FA /* Settings */,
+				EB3BA1EC1FF5FA4300ACCD0F /* CareButton */,
+				EB3BA1EB1FF5FA3600ACCD0F /* Timeline */,
+				EB3BA1BC1FF336EB00ACCD0F /* RootViewController.swift */,
+				EB3BA1BE1FF3371700ACCD0F /* SplashViewController.swift */,
+				EBCB86CF20847A3400E04A4E /* LoginViewController.swift */,
+				EBCB86D120847A4B00E04A4E /* LoginViewController.storyboard */,
+				EB3BA1C01FF3376000ACCD0F /* MainController.swift */,
+				EB3BA1C31FF3383600ACCD0F /* MainController.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB3BA1C51FF33D1800ACCD0F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1283F207B09FE00ABF323 /* Firestore */,
+				EB3BA1C61FF33D2E00ACCD0F /* Log.swift */,
+				EBEEF08C20218AA600EB48FE /* KeychainService.swift */,
+				EB0662F4204BA54700DBD960 /* UserDefaultsService.swift */,
+				EB066320204D218800DBD960 /* FirebaseStorage.swift */,
+				EBA29B4820733977009C5080 /* Error.swift */,
+				EBB12861207DC63000ABF323 /* EnumCollection.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EB3BA1CC1FF3575E00ACCD0F /* CareButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB69B08A1FF9E2A5004ABEFA /* Action */,
+				EB3BA1D11FF3581600ACCD0F /* CareButtonCollectionViewCell.swift */,
+				EB3BA1D21FF3581600ACCD0F /* CareButtonCollectionViewCell.xib */,
+				EB66BAD41FF8ADC700E4EB4A /* CareButtonView.swift */,
+				EB66BAD21FF8AD2E00E4EB4A /* CareButtonView.xib */,
+				EB66BAD61FF8B18000E4EB4A /* CareButtonViewHelper.swift */,
+			);
+			name = CareButton;
+			sourceTree = "<group>";
+		};
+		EB3BA1D51FF36D9800ACCD0F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EBA29B4E2074A040009C5080 /* Projects */,
+				EBA29B372071CEFA009C5080 /* User */,
+				EB3BA1ED1FF5FB4C00ACCD0F /* CareButtonEventLog */,
+				EB3BA1D61FF36DA900ACCD0F /* CareButton */,
+				EB743AF520524D2B009830FA /* ApplicationBuilder.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		EB3BA1D61FF36DA900ACCD0F /* CareButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB0662EE204B97B000DBD960 /* CareButton.swift */,
+				EB0662F0204B97F300DBD960 /* CareButtonPanel.swift */,
+				EB3BA1D71FF36DC000ACCD0F /* CareButtonDummyData.swift */,
+				EB3BA1D91FF371F500ACCD0F /* UIColor+CareButton.swift */,
+			);
+			name = CareButton;
+			sourceTree = "<group>";
+		};
+		EB3BA1E31FF4C86F00ACCD0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB86CD208463FF00E04A4E /* CoreImage.framework */,
+				EBA29B392071E907009C5080 /* RxBlocking.framework */,
+				EBA29B3B2071E908009C5080 /* RxCocoa.framework */,
+				EBA29B3A2071E908009C5080 /* RxSwift.framework */,
+				EBA29B3C2071E908009C5080 /* RxTest.framework */,
+				EBA29B30206E1B16009C5080 /* SafariServices.framework */,
+				EBA29B2B206E0444009C5080 /* TwitterCore.framework */,
+				EBA29B2C206E0444009C5080 /* TwitterKit.framework */,
+				EBA29B2A206E0444009C5080 /* TwitterShareExtensionUI.framework */,
+				EB066325204D25F300DBD960 /* FirebaseFirestore.framework */,
+				EB066317204D009900DBD960 /* KeychainAccess.framework */,
+				EB3BA1E41FF4C87000ACCD0F /* NativePopup.framework */,
+				6D50B3BCCF4E36C6F9115617 /* Pods_CareButtons.framework */,
+				D86A207700A42012B342BD93 /* Pods_CareButtonsTests.framework */,
+				6F04EFE1327FF69DDF268391 /* Pods_CareButtonsUITests.framework */,
+				EB0662FB204BC2D800DBD960 /* NotificationCenter.framework */,
+				B426A3ECD7C0DF78D69CB0E7 /* Pods_CareButtonToday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB3BA1EB1FF5FA3600ACCD0F /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1E91FF5F89100ACCD0F /* TimelineViewController.swift */,
+				EB3BA1E71FF5F87E00ACCD0F /* TimelineViewController.storyboard */,
+				EB3BA1F41FF6059900ACCD0F /* CircleView.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		EB3BA1EC1FF5FA4300ACCD0F /* CareButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1C81FF3437200ACCD0F /* CareButtonsViewController.swift */,
+				EB3BA1CA1FF3438600ACCD0F /* CareButtonsViewController.storyboard */,
+				EB66BAD81FF8B31300E4EB4A /* CareButtonActionViewController.swift */,
+				EB66BAD01FF8ABDB00E4EB4A /* CareButtonActionViewController.storyboard */,
+				EB69B0971FFB3853004ABEFA /* OrgTransition.swift */,
+			);
+			path = CareButton;
+			sourceTree = "<group>";
+		};
+		EB3BA1ED1FF5FB4C00ACCD0F /* CareButtonEventLog */ = {
+			isa = PBXGroup;
+			children = (
+				EB0662F2204B997400DBD960 /* CareButtonEventLog.swift */,
+				EB3BA1EE1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift */,
+				EBEEF0902022BBCF00EB48FE /* CareButtonEventLogParser.swift */,
+				EB0662EC204A63FF00DBD960 /* SlackAction.swift */,
+			);
+			name = CareButtonEventLog;
+			sourceTree = "<group>";
+		};
+		EB69B08A1FF9E2A5004ABEFA /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				EB69B08B1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.swift */,
+				EB69B08C1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.xib */,
+				EB69B08F1FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.swift */,
+				EB69B0901FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.xib */,
+				EB69B0931FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.swift */,
+				EB69B0941FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.xib */,
+				EB802D951FFC930000D39396 /* CareButtonActionNoteTableViewCell.swift */,
+				EB802D961FFC930000D39396 /* CareButtonActionNoteTableViewCell.xib */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		EB69B09A1FFB3BEF004ABEFA /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				EB3BA1F01FF5FFB700ACCD0F /* TimelineTableViewCell.swift */,
+				EB3BA1F11FF5FFB700ACCD0F /* TimelineTableViewCell.xib */,
+				EB69B09E1FFB3C77004ABEFA /* TimelineHeaderSectionView.swift */,
+				EB69B09C1FFB3C4D004ABEFA /* TimelineHeaderSectionView.xib */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		EB69B09B1FFB3C02004ABEFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1284B207B373700ABF323 /* Settings */,
+				EB3BA1CC1FF3575E00ACCD0F /* CareButton */,
+				EB69B09A1FFB3BEF004ABEFA /* Timeline */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EB743B11206DEFBC009830FA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EB743B12206DF005009830FA /* SettingsTableViewController.storyboard */,
+				EB743B14206DF01A009830FA /* SettingsTableViewController.swift */,
+				EBB12847207B1E3000ABF323 /* InviteTableViewController.storyboard */,
+				EBB12849207B1E4A00ABF323 /* InviteTableTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EBA29B372071CEFA009C5080 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EBA29B352071CEEC009C5080 /* UserService.swift */,
+				EBA29B452072088D009C5080 /* AuthenticationService.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		EBA29B4E2074A040009C5080 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				EBA29B4B20749E31009C5080 /* ProjectService.swift */,
+				EBB1285E207CAA4900ABF323 /* ProjectInvitationService.swift */,
+				EBA29B502074A060009C5080 /* Project.swift */,
+				EBB12854207B3C1300ABF323 /* SharedUser.swift */,
+				EBB1285B207CA39300ABF323 /* Invitation.swift */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		EBB1283F207B09FE00ABF323 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				EBB12840207B0A4000ABF323 /* DBTree.swift */,
+			);
+			name = Firestore;
+			sourceTree = "<group>";
+		};
+		EBB1284B207B373700ABF323 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EBB1284C207B377D00ABF323 /* SharedUserTableViewCell.swift */,
+				EBB1284D207B377D00ABF323 /* SharedUserTableViewCell.xib */,
+				EBB12856207B3E9100ABF323 /* NoExistSharedUserTableViewCell.swift */,
+				EBB12857207B3E9100ABF323 /* NoExistSharedUserTableViewCell.xib */,
+				EBB12850207B379900ABF323 /* InviteCodeTableViewCell.swift */,
+				EBB12851207B379900ABF323 /* InviteCodeTableViewCell.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB0662F9204BC2D800DBD960 /* CareButtonToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB066307204BC2D800DBD960 /* Build configuration list for PBXNativeTarget "CareButtonToday" */;
+			buildPhases = (
+				BA6403A315F85353EA10232F /* [CP] Check Pods Manifest.lock */,
+				EB0662F6204BC2D800DBD960 /* Sources */,
+				EB0662F7204BC2D800DBD960 /* Frameworks */,
+				EB0662F8204BC2D800DBD960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareButtonToday;
+			productName = CareButtonToday;
+			productReference = EB0662FA204BC2D800DBD960 /* CareButtonToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EB3BA1881FF3349400ACCD0F /* CareButtons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BA1B11FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtons" */;
+			buildPhases = (
+				DD0194B75AA42C9DB87B4064 /* [CP] Check Pods Manifest.lock */,
+				EB3BA1851FF3349400ACCD0F /* Sources */,
+				EB3BA1861FF3349400ACCD0F /* Frameworks */,
+				EB3BA1871FF3349400ACCD0F /* Resources */,
+				EB3BA1BA1FF3355100ACCD0F /* SwiftLint */,
+				EB3BA1E61FF4C87E00ACCD0F /* Carthage */,
+				92834998CBBF6F79F76F63F8 /* [CP] Embed Pods Frameworks */,
+				EB06630A204BC2D800DBD960 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB066305204BC2D800DBD960 /* PBXTargetDependency */,
+			);
+			name = CareButtons;
+			productName = CareButtons;
+			productReference = EB3BA1891FF3349400ACCD0F /* CareButtons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB3BA19C1FF3349400ACCD0F /* CareButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BA1B41FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtonsTests" */;
+			buildPhases = (
+				13D81A050C48A8D67C91687E /* [CP] Check Pods Manifest.lock */,
+				EB3BA1991FF3349400ACCD0F /* Sources */,
+				EB3BA19A1FF3349400ACCD0F /* Frameworks */,
+				EB3BA19B1FF3349400ACCD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3BA19F1FF3349400ACCD0F /* PBXTargetDependency */,
+			);
+			name = CareButtonsTests;
+			productName = CareButtonsTests;
+			productReference = EB3BA19D1FF3349400ACCD0F /* CareButtonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB3BA1A71FF3349400ACCD0F /* CareButtonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3BA1B71FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtonsUITests" */;
+			buildPhases = (
+				9CCBC59B8C92D5FB418AB2ED /* [CP] Check Pods Manifest.lock */,
+				EB3BA1A41FF3349400ACCD0F /* Sources */,
+				EB3BA1A51FF3349400ACCD0F /* Frameworks */,
+				EB3BA1A61FF3349400ACCD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3BA1AA1FF3349400ACCD0F /* PBXTargetDependency */,
+			);
+			name = CareButtonsUITests;
+			productName = CareButtonsUITests;
+			productReference = EB3BA1A81FF3349400ACCD0F /* CareButtonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3BA1811FF3349400ACCD0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Hiroka Yago";
+				TargetAttributes = {
+					EB0662F9204BC2D800DBD960 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					EB3BA1881FF3349400ACCD0F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					EB3BA19C1FF3349400ACCD0F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB3BA1881FF3349400ACCD0F;
+					};
+					EB3BA1A71FF3349400ACCD0F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB3BA1881FF3349400ACCD0F;
+					};
+				};
+			};
+			buildConfigurationList = EB3BA1841FF3349400ACCD0F /* Build configuration list for PBXProject "CareButtons" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3BA1801FF3349400ACCD0F;
+			productRefGroup = EB3BA18A1FF3349400ACCD0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3BA1881FF3349400ACCD0F /* CareButtons */,
+				EB3BA19C1FF3349400ACCD0F /* CareButtonsTests */,
+				EB3BA1A71FF3349400ACCD0F /* CareButtonsUITests */,
+				EB0662F9204BC2D800DBD960 /* CareButtonToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB0662F8204BC2D800DBD960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB06631B204D017900DBD960 /* CareButtonCollectionViewCell.xib in Resources */,
+				EB066302204BC2D800DBD960 /* MainInterface.storyboard in Resources */,
+				EB743B0C205BB42C009830FA /* GoogleService-Info.plist in Resources */,
+				EB066327204D2F0F00DBD960 /* Assets.xcassets in Resources */,
+				EB06631D204D017900DBD960 /* CareButtonView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1871FF3349400ACCD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB12853207B379900ABF323 /* InviteCodeTableViewCell.xib in Resources */,
+				EB66BAD31FF8AD2E00E4EB4A /* CareButtonView.xib in Resources */,
+				EB69B0921FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.xib in Resources */,
+				EBEEF08F2021933500EB48FE /* Podfile.lock in Resources */,
+				EB802D981FFC930000D39396 /* CareButtonActionNoteTableViewCell.xib in Resources */,
+				EBB12848207B1E3000ABF323 /* InviteTableViewController.storyboard in Resources */,
+				EBB12859207B3E9100ABF323 /* NoExistSharedUserTableViewCell.xib in Resources */,
+				EB3BA1E81FF5F87E00ACCD0F /* TimelineViewController.storyboard in Resources */,
+				EB3BA1E11FF4C85200ACCD0F /* Cartfile in Resources */,
+				EB66BAD11FF8ABDB00E4EB4A /* CareButtonActionViewController.storyboard in Resources */,
+				EB3BA1F31FF5FFB700ACCD0F /* TimelineTableViewCell.xib in Resources */,
+				EB69B08E1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.xib in Resources */,
+				EBEEF08A2021862D00EB48FE /* Podfile in Resources */,
+				EB3BA1CB1FF3438600ACCD0F /* CareButtonsViewController.storyboard in Resources */,
+				EB3BA1D41FF3581600ACCD0F /* CareButtonCollectionViewCell.xib in Resources */,
+				EBEEF087202185AC00EB48FE /* GoogleService-Info.plist in Resources */,
+				EB743B13206DF005009830FA /* SettingsTableViewController.storyboard in Resources */,
+				EB3BA1971FF3349400ACCD0F /* LaunchScreen.storyboard in Resources */,
+				EB3BA1C41FF3383600ACCD0F /* MainController.storyboard in Resources */,
+				EBB1284F207B377D00ABF323 /* SharedUserTableViewCell.xib in Resources */,
+				EB3BA1E21FF4C85200ACCD0F /* Cartfile.resolved in Resources */,
+				EB3BA1941FF3349400ACCD0F /* Assets.xcassets in Resources */,
+				EBCB86D220847A4B00E04A4E /* LoginViewController.storyboard in Resources */,
+				EB69B09D1FFB3C4D004ABEFA /* TimelineHeaderSectionView.xib in Resources */,
+				EB69B0961FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA19B1FF3349400ACCD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1A61FF3349400ACCD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D81A050C48A8D67C91687E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareButtonsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92834998CBBF6F79F76F63F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CareButtons/Pods-CareButtons-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareButtons/Pods-CareButtons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CCBC59B8C92D5FB418AB2ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareButtonsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6403A315F85353EA10232F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareButtonToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0194B75AA42C9DB87B4064 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareButtons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3BA1BA1FF3355100ACCD0F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		EB3BA1E61FF4C87E00ACCD0F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NativePopup.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0662F6204BC2D800DBD960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB066315204BCE3200DBD960 /* UserDefaultsService.swift in Sources */,
+				EB06630F204BCE3200DBD960 /* CareButton.swift in Sources */,
+				EBA29B382071CF00009C5080 /* UserService.swift in Sources */,
+				EB066311204BCE3200DBD960 /* CareButtonDummyData.swift in Sources */,
+				EB06631C204D017900DBD960 /* CareButtonView.swift in Sources */,
+				EB066313204BCE3200DBD960 /* Log.swift in Sources */,
+				EBB12842207B0C4700ABF323 /* DBTree.swift in Sources */,
+				EB06630C204BCE3200DBD960 /* CareButtonEventLogDummyData.swift in Sources */,
+				EBA29B522074A182009C5080 /* Project.swift in Sources */,
+				EBB1285A207C895500ABF323 /* SharedUser.swift in Sources */,
+				EBB12860207CAA4900ABF323 /* ProjectInvitationService.swift in Sources */,
+				EB743AF720524D2B009830FA /* ApplicationBuilder.swift in Sources */,
+				EBB1285D207CA39300ABF323 /* Invitation.swift in Sources */,
+				EBA29B4F2074A04D009C5080 /* ProjectService.swift in Sources */,
+				EBA29B4A20733977009C5080 /* Error.swift in Sources */,
+				EB066322204D21AA00DBD960 /* FirebaseStorage.swift in Sources */,
+				EB066314204BCE3200DBD960 /* KeychainService.swift in Sources */,
+				EB06630D204BCE3200DBD960 /* CareButtonEventLogParser.swift in Sources */,
+				EB06631E204D017900DBD960 /* CareButtonViewHelper.swift in Sources */,
+				EB06630B204BCE3200DBD960 /* CareButtonEventLog.swift in Sources */,
+				EB066312204BCE3200DBD960 /* UIColor+CareButton.swift in Sources */,
+				EB066310204BCE3200DBD960 /* CareButtonPanel.swift in Sources */,
+				EBA29B4720720981009C5080 /* AuthenticationService.swift in Sources */,
+				EB06630E204BCE3200DBD960 /* SlackAction.swift in Sources */,
+				EB06631A204D017900DBD960 /* CareButtonCollectionViewCell.swift in Sources */,
+				EB0662FF204BC2D800DBD960 /* TodayViewController.swift in Sources */,
+				EBB12863207DC63000ABF323 /* EnumCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1851FF3349400ACCD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB69B0911FF9E3B1004ABEFA /* CareButtonActionQuantityTableViewCell.swift in Sources */,
+				EBB12841207B0A4000ABF323 /* DBTree.swift in Sources */,
+				EBB12858207B3E9100ABF323 /* NoExistSharedUserTableViewCell.swift in Sources */,
+				EB3BA1D31FF3581600ACCD0F /* CareButtonCollectionViewCell.swift in Sources */,
+				EB69B08D1FF9E2CD004ABEFA /* CareButtonActionTimeTableViewCell.swift in Sources */,
+				EBB12862207DC63000ABF323 /* EnumCollection.swift in Sources */,
+				EB3BA1EA1FF5F89100ACCD0F /* TimelineViewController.swift in Sources */,
+				EB3BA1F21FF5FFB700ACCD0F /* TimelineTableViewCell.swift in Sources */,
+				EB3BA1D81FF36DC000ACCD0F /* CareButtonDummyData.swift in Sources */,
+				EBB1283E207735E400ABF323 /* ControllerFactory.swift in Sources */,
+				EB69B0981FFB3853004ABEFA /* OrgTransition.swift in Sources */,
+				EB69B0951FF9EA71004ABEFA /* CareButtonActionSelectTimeTableViewCell.swift in Sources */,
+				EBCB86D020847A3400E04A4E /* LoginViewController.swift in Sources */,
+				EB3BA18D1FF3349400ACCD0F /* AppDelegate.swift in Sources */,
+				EBB12852207B379900ABF323 /* InviteCodeTableViewCell.swift in Sources */,
+				EBEEF0912022BBCF00EB48FE /* CareButtonEventLogParser.swift in Sources */,
+				EB0662F1204B97F300DBD960 /* CareButtonPanel.swift in Sources */,
+				EB0662F5204BA54700DBD960 /* UserDefaultsService.swift in Sources */,
+				EB3BA1BD1FF336EB00ACCD0F /* RootViewController.swift in Sources */,
+				EBA29B512074A060009C5080 /* Project.swift in Sources */,
+				EBB1285F207CAA4900ABF323 /* ProjectInvitationService.swift in Sources */,
+				EBA29B462072088D009C5080 /* AuthenticationService.swift in Sources */,
+				EB743AF620524D2B009830FA /* ApplicationBuilder.swift in Sources */,
+				EB66BAD71FF8B18000E4EB4A /* CareButtonViewHelper.swift in Sources */,
+				EB3BA1F51FF6059900ACCD0F /* CircleView.swift in Sources */,
+				EB0662ED204A63FF00DBD960 /* SlackAction.swift in Sources */,
+				EBB1284A207B1E4A00ABF323 /* InviteTableTableViewController.swift in Sources */,
+				EBA29B362071CEEC009C5080 /* UserService.swift in Sources */,
+				EBEEF08D20218AA600EB48FE /* KeychainService.swift in Sources */,
+				EBB1285C207CA39300ABF323 /* Invitation.swift in Sources */,
+				EB0662F3204B997400DBD960 /* CareButtonEventLog.swift in Sources */,
+				EB3BA1EF1FF5FB6C00ACCD0F /* CareButtonEventLogDummyData.swift in Sources */,
+				EBB1284E207B377D00ABF323 /* SharedUserTableViewCell.swift in Sources */,
+				EB066321204D218800DBD960 /* FirebaseStorage.swift in Sources */,
+				EB3BA1C71FF33D2E00ACCD0F /* Log.swift in Sources */,
+				EB802D971FFC930000D39396 /* CareButtonActionNoteTableViewCell.swift in Sources */,
+				EB3BA1DA1FF371F500ACCD0F /* UIColor+CareButton.swift in Sources */,
+				EBB12855207B3C1300ABF323 /* SharedUser.swift in Sources */,
+				EB3BA1BF1FF3371700ACCD0F /* SplashViewController.swift in Sources */,
+				EB66BAD91FF8B31300E4EB4A /* CareButtonActionViewController.swift in Sources */,
+				EB66BAD51FF8ADC700E4EB4A /* CareButtonView.swift in Sources */,
+				EB3BA1C11FF3376000ACCD0F /* MainController.swift in Sources */,
+				EB743B15206DF01A009830FA /* SettingsTableViewController.swift in Sources */,
+				EB0662EF204B97B000DBD960 /* CareButton.swift in Sources */,
+				EB3BA1C91FF3437200ACCD0F /* CareButtonsViewController.swift in Sources */,
+				EBA29B4920733977009C5080 /* Error.swift in Sources */,
+				EB69B09F1FFB3C77004ABEFA /* TimelineHeaderSectionView.swift in Sources */,
+				EBA29B4C20749E31009C5080 /* ProjectService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1991FF3349400ACCD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3BA1A21FF3349400ACCD0F /* CareButtonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3BA1A41FF3349400ACCD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3BA1AD1FF3349400ACCD0F /* CareButtonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB066305204BC2D800DBD960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB0662F9204BC2D800DBD960 /* CareButtonToday */;
+			targetProxy = EB066304204BC2D800DBD960 /* PBXContainerItemProxy */;
+		};
+		EB3BA19F1FF3349400ACCD0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3BA1881FF3349400ACCD0F /* CareButtons */;
+			targetProxy = EB3BA19E1FF3349400ACCD0F /* PBXContainerItemProxy */;
+		};
+		EB3BA1AA1FF3349400ACCD0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3BA1881FF3349400ACCD0F /* CareButtons */;
+			targetProxy = EB3BA1A91FF3349400ACCD0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB066300204BC2D800DBD960 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB066301204BC2D800DBD960 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		EB3BA1951FF3349400ACCD0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3BA1961FF3349400ACCD0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB066308204BC2D800DBD960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC69654B25EE7B006580526 /* Pods-CareButtonToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CareButtonToday/CareButtonToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CareButtonToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtons.CareButtonToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB066309204BC2D800DBD960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04312AAE3AFDACA2EFBE12F8 /* Pods-CareButtonToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CareButtonToday/CareButtonToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CareButtonToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtons.CareButtonToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB3BA1AF1FF3349400ACCD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB3BA1B01FF3349400ACCD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3BA1B21FF3349400ACCD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28546F5761FAF7BD23954C10 /* Pods-CareButtons.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CareButtons/CareButtons.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CareButtons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB3BA1B31FF3349400ACCD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF15E6F863612C1A59FC5957 /* Pods-CareButtons.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CareButtons/CareButtons.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CareButtons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB3BA1B51FF3349400ACCD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A65202E9BA9EBF268C9B05 /* Pods-CareButtonsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				INFOPLIST_FILE = CareButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareButtons.app/CareButtons";
+			};
+			name = Debug;
+		};
+		EB3BA1B61FF3349400ACCD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2ED939F2CBA4224769EAE86 /* Pods-CareButtonsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				INFOPLIST_FILE = CareButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareButtons.app/CareButtons";
+			};
+			name = Release;
+		};
+		EB3BA1B81FF3349400ACCD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9603859814D80CFCF89660 /* Pods-CareButtonsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				INFOPLIST_FILE = CareButtonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CareButtons;
+			};
+			name = Debug;
+		};
+		EB3BA1B91FF3349400ACCD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF06E83B3FC5883D157DEC7 /* Pods-CareButtonsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2X2UZ7AEE;
+				INFOPLIST_FILE = CareButtonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.CareButtonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CareButtons;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB066307204BC2D800DBD960 /* Build configuration list for PBXNativeTarget "CareButtonToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB066308204BC2D800DBD960 /* Debug */,
+				EB066309204BC2D800DBD960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BA1841FF3349400ACCD0F /* Build configuration list for PBXProject "CareButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BA1AF1FF3349400ACCD0F /* Debug */,
+				EB3BA1B01FF3349400ACCD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BA1B11FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BA1B21FF3349400ACCD0F /* Debug */,
+				EB3BA1B31FF3349400ACCD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BA1B41FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BA1B51FF3349400ACCD0F /* Debug */,
+				EB3BA1B61FF3349400ACCD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3BA1B71FF3349400ACCD0F /* Build configuration list for PBXNativeTarget "CareButtonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3BA1B81FF3349400ACCD0F /* Debug */,
+				EB3BA1B91FF3349400ACCD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3BA1811FF3349400ACCD0F /* Project object */;
+}
